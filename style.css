@@ -1,19 +1,28 @@
-body {
-    display: flex;
+body {                                  
+    display: flex;                          /*Add flex container around whole page*/
     flex-direction: column;
-    margin: 10px 100px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 60px;
     min-height: 100vh;
+    text-align: center;
 }
 
 .header {
-    display: flex;
+    display: flex;                          /*Add flex container to header*/
     align-items: center;
     justify-content: space-between;
 }
 
 .nav-bar ul {
-    display: flex;
+    display: flex;                          /*Add flex container to links*/
     gap: 30px;
     list-style-type: none;
+}
+
+.info-container {
+    display: flex;                          /*Add flex container to info cards*/
+    justify-content: center;
+    gap: 50px;
 }
 

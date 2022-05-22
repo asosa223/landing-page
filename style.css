@@ -20,9 +20,41 @@ body {
     list-style-type: none;
 }
 
+.main-body-banner {
+    padding: 100px;
+}
+
+.main-body-banner-container {
+    display: flex;                      /*!!!!!NEED TO FIGURE OUT FLEX DISPLAY!!!!!*/
+}
+
+.main-body-info {
+    padding: 100px;
+}
+
 .info-container {
     display: flex;                          /*Add flex container to info cards*/
     justify-content: center;
     gap: 50px;
 }
 
+.main-body-quote {
+    display: flex;                          /*Add flex container to quote and author*/
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 100px 300px;                         /*Need to keep padding in mind*/
+
+}
+
+.sign-up-container {
+    display: flex;                          /*Add flex container to title, text and button*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 200px;
+    background-color: darkgray;
+}
+
+.footer {
+    padding: 30px;
+}

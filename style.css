@@ -3,15 +3,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-    padding: 10px 60px;
     min-height: 100vh;
     text-align: center;
 }
 
 .header {
-    display: flex;                          /*Add flex container to header*/
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #1f2937;
+    color: #F9FAF8;
 }
 
 .nav-bar ul {
@@ -22,10 +23,25 @@ body {
 
 .main-body-banner {
     padding: 100px;
+    background-color: #1f2937;
+    color: #f9faf8;
 }
 
 .main-body-banner-container {
-    display: flex;                      /*!!!!!NEED TO FIGURE OUT FLEX DISPLAY!!!!!*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-body-banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 30px;
+}
+
+.main-body-banner-image {
+    padding: 100px;
 }
 
 .main-body-info {
@@ -39,22 +55,36 @@ body {
 }
 
 .main-body-quote {
-    display: flex;                          /*Add flex container to quote and author*/
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 100px 300px;                         /*Need to keep padding in mind*/
+    padding: 100px 300px;
+    background-color: #e5e7eb;
+}
 
+.main-body-sign-up {
+    display: flex;
+    justify-content: center;
 }
 
 .sign-up-container {
-    display: flex;                          /*Add flex container to title, text and button*/
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: flex;
     margin: 50px 200px;
-    background-color: darkgray;
+    background-color: #3882f6;
+    padding: 10px 400px;
+    align-items: center;
 }
+
+.sign-up-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;                
+}
+
+/*Might need to create div for sign up button at the bottom*/
 
 .footer {
     padding: 30px;
+    background-color: #1f2937;
+    color: #f9faf8;
 }

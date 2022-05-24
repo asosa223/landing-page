@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     text-align: center;
 }
-
+/***************************Header*********************************************************/
 .header {
     display: flex;
     align-items: center;
@@ -21,16 +21,19 @@ body {
     list-style-type: none;
 }
 
+/***************************Banner*********************************************************/
 .main-body-banner {
     padding: 100px;
     background-color: #1f2937;
     color: #f9faf8;
 }
 
+
 .main-body-banner-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: initial;
 }
 
 .main-body-banner-content {
@@ -40,20 +43,46 @@ body {
     padding: 10px 30px;
 }
 
+.main-body-banner-content h2 {
+    font-size: 36px;
+    /* font-weight: bolder; */
+}
+
+.main-body-banner-content p {
+    font-size: 18px;
+    width: 400px;
+}
+
+.main-body-banner-content button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 10px 20px;
+}
+
 .main-body-banner-image {
-    padding: 100px;
+    display: flex;
+    max-width: 100%;
+    height: 400px;
 }
 
 .main-body-info {
     padding: 100px;
 }
 
+/***************************INFO*********************************************************/
 .info-container {
     display: flex;                          /*Add flex container to info cards*/
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-around;
 }
 
+.info img {
+    height: 200px;
+    width: auto;
+    border: 2px solid #3882f6;
+    border-radius: 20px;
+}
+
+/***************************QUOTE*********************************************************/
 .main-body-quote {
     display: flex;
     flex-direction: column;
@@ -62,6 +91,19 @@ body {
     background-color: #e5e7eb;
 }
 
+p.quote-text {
+    font-size: 28px;
+    font-style: italic;
+    color: #1f2937;
+    text-align: left;
+}
+
+p.quote-author {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/***************************SIGN UP*********************************************************/
 .main-body-sign-up {
     display: flex;
     justify-content: center;
@@ -78,11 +120,13 @@ body {
 .sign-up-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;                
+    align-items: flex-start;  
+    color: #F9FAF8;              
 }
 
 /*Might need to create div for sign up button at the bottom*/
 
+/***************************FOOTER*********************************************************/
 .footer {
     padding: 30px;
     background-color: #1f2937;

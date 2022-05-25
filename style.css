@@ -15,11 +15,26 @@ body {
     color: #F9FAF8;
 }
 
+.header-title {
+    font-size: 32px;
+}
+
 .nav-bar ul {
     display: flex;                          /*Add flex container to links*/
     gap: 30px;
     list-style-type: none;
+    font-size: 20px;
 }
+
+.nav-bar a:link {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.nav-bar a:visited {
+    color: #e5e7eb;
+}
+
 
 /***************************Banner*********************************************************/
 .main-body-banner {
@@ -57,6 +72,7 @@ body {
     background-color: #3882f6;
     color: #f9faf8;
     padding: 10px 20px;
+    border: none;
 }
 
 .main-body-banner-image {
@@ -86,8 +102,8 @@ body {
 .main-body-quote {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: 100px 300px;
+    align-items: center;
+    padding: 50px 300px;
     background-color: #e5e7eb;
 }
 
@@ -101,20 +117,31 @@ p.quote-text {
 p.quote-author {
     font-size: 36px;
     font-weight: bold;
+    align-self: flex-end;
 }
 
 /***************************SIGN UP*********************************************************/
 .main-body-sign-up {
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
+}
+
+.main-body-sign-up button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 10px 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 20px;
+    font-size: 16px;
 }
 
 .sign-up-container {
     display: flex;
     margin: 50px 200px;
     background-color: #3882f6;
-    padding: 10px 400px;
+    padding: 10px 200px;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .sign-up-info {
